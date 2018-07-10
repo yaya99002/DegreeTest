@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="@string/txt_set"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/etIp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/layoutform"
+                android:inputType="textUri"
+                android:text="172.20.10.6"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/etPort"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:background="@drawable/layoutform"
+                android:inputType="number"
+                android:text="8080"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/bnConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttonform2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TemperatureTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="20dp"
+                android:text="@string/txt_Temperature"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/Temperature_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|top"
+                android:paddingTop="20dp"
+                android:textSize="35sp" />
+
+            <LinearLayout
+                android:layout_width="286dp"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/fanopen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="风扇开" />
+               
+                <Button
+                    android:id="@+id/fanclose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="风扇关" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/humidityTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="20dp"
+                android:text="@string/txt_humidity"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/humidity_text"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|top"
+                android:paddingTop="20dp"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnDegree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_getdegree" />
+
+        </LinearLayout>        
+    </LinearLayout>
+
+   
+</LinearLayout>

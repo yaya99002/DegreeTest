@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DegreeTest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="txt_degree">Degree</string>
+    <string name= "txt_Temperature">温度</string>
+    <string name = "txt_humidity">湿度</string>
+    <string name="txt_value">Value</string>
+    <string name="txt_getdegree">开始获取</string>
+    <string name= "txt_stopdegree">停止获取</string>
+    <string name = "txt_set">设置IP与端口</string>
+    <string name = "txt_IP_or_post_null">IP或者端口未输入</string>
+    <string name = "txt_connect_timeouot">连接超时</string>
+</resources>
